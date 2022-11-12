@@ -9,7 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 /*icones*/
+.menu.active.teste{
+    display: none;
 
+}
 
 
 .max-width{
@@ -37,7 +40,7 @@ html{
     justify-content: space-between;
 }
 .navbar .logo a{ 
-    color: #fff;
+    color: white;
     font-size: 35px;
     font-weight: 600;
 }
@@ -55,7 +58,7 @@ html{
 }
 .navbar .menu li a{
     display: block;
-    color: white;
+    color: crimson;
     font-size: 18px;
     font-weight: 500;
     margin-left: 20px;
@@ -201,7 +204,7 @@ section .title::after{
 
 /*  sessão sobre */
 .about .title::after{
-    content: "?¿Quem sou eu?¿";
+    content: "Quem sou eu?";
 }
 .about .about-content .left{
     width: 45%;
@@ -244,55 +247,10 @@ section .title::after{
     border-radius: 200px;
 }
 
-/*  sessão de serviços  */
-.services, .project{
-    background: #111;
-    color: #fff;
-}
-.services .title::before,
-.project .title::before{
-    background: #fff;
-}
-.services .title::after,
-.project .title::after{
-    background: #111;
-    content: "Que ofereço";
-}
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover{
-    background: crimson;
-}
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card ion-icon{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover ion-icon{
-    color: black;
-}
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
 
 /* sessão especialidades */
 .skills .title::after{
-    content: "Que faço";
+    content: "O que faço?";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -353,20 +311,20 @@ section .title::after{
     width: 100%;
 
 }
-.skills .skills-content .right .html::before{
-    width: 95%;
+.skills .skills-content .right .Python::before{
+    width: 80%;
 }
-.skills .skills-content .right .css::before{
-    width: 90%;
-}
-.skills .skills-content .right .js::before{
+.skills .skills-content .right .java::before{
     width: 75%;
 }
-.skills .skills-content .right .bootstrap::before{
+.skills .skills-content .right .html::before{
+    width: 65%;
+}
+.skills .skills-content .right .css::before{
     width: 60%;
 }
-.skills .skills-content .right .reactjs::before{
-    width: 55%;
+.skills .skills-content .right .django::before{
+    width: 50%;
 }
 
 /* sessão projetos */
@@ -603,6 +561,7 @@ footer b a ion-icon{
     }
     .navbar .menu.active{
         left: 0;
+        
     }
     .navbar .menu li{
         display: block;
