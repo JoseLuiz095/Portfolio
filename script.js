@@ -20,24 +20,30 @@ $(document).ready(function(){
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
+    
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
+        $('.menu').toggleClass("teste"); 
     });
     // toggle menu/navbar script
+    
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
+        $('.navbar .menu').removeClass("teste");
+        $('.navbar .menu').addClass("active"); 
         $('.menu-btn i').toggleClass("active");
-    });
+        })
+    
+        
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Desenvolvedor Full-Stack", "Técnico em Informática","Freelancer"],
+        strings: ["Full-Stack", "Suporte em TI","Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
     var typed = new Typed(".typing-2", {
-        strings: ["Desenvolvedor Full-Stack", "Técnico em Informática","Freelancer"],
+        strings: ["Full-Stack", "Suporte em TI","Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
