@@ -77,7 +77,7 @@ html,body{
 /*  Home   inicio */
 .home{
     display: flex;
-    background: url("/image/banner_1.png");
+    background: url("image/banner_1.png");
     height: 100vh;
     color: #fff;
     min-height: 500px;
