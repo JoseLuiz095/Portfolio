@@ -655,7 +655,7 @@ footer b a ion-icon{
         margin-bottom: 35px;
     }
     .cod_pagina{
-        width: 75%;
+        width: 90%;
     }
 }
 @media (max-width: 690px) {
@@ -674,9 +674,7 @@ footer b a ion-icon{
     .services .serv-content .card{
         width: 100%;
     }
-    .cod_pagina{
-        width: 60%;
-    }
+    
     .containner{
         height: 700px;
     }
@@ -715,5 +713,8 @@ footer b a ion-icon{
     }
     section .title::after{
         bottom: -45px;
+    }
+    .cod_pagina{
+        width: 65%;
     }
 }
