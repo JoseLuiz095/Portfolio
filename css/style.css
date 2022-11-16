@@ -1,30 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-html,body{
+
+html,
+body {
     scroll-behavior: smooth;
     height: 100vh;
 }
 
 /*icones*/
-.menu.active.teste{
+.menu.active.teste {
     display: none;
 
 }
 
 
-.max-width{
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
 
 /*  navbar início*/
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
     padding: 30px 0;
@@ -33,49 +36,57 @@ html,body{
     transition: all 0.3s ease;
 
 }
-.navbar.sticky{
-     background: crimson;   
-     padding: 15px 0;
+
+.navbar.sticky {
+    background: crimson;
+    padding: 15px 0;
 }
-.navbar .max-width{
+
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{ 
+
+.navbar .logo a {
     color: white;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+
+.navbar .logo a span {
     color: crimson;
-    
+
 }
-.navbar.sticky .logo a span{
+
+.navbar.sticky .logo a span {
     color: black;
 }
 
-.navbar .menu li{
+.navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+
+.navbar .menu li a {
     display: block;
     color: white;
     font-size: 18px;
     font-weight: 500;
     margin-left: 20px;
-    transition: color 0.3s ease;  
+    transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+
+.navbar .menu li a:hover {
     color: crimson;
 }
-.navbar.sticky .menu li a:hover{
+
+.navbar.sticky .menu li a:hover {
     color: black;
 }
 
 /*  Home   inicio */
-.home{
+.home {
     display: flex;
     background: url("/image/banner_1.png");
     height: 100vh;
@@ -84,33 +95,39 @@ html,body{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    
+
 }
 
-.home .max-width{
-   width: 100%;
-   display: flex;
+.home .max-width {
+    width: 100%;
+    display: flex;
 }
-.home .max-width .row{
+
+.home .max-width .row {
     margin-right: 0;
 }
-.home .home-content .text-1{
+
+.home .home-content .text-1 {
     font-size: 24px;
 }
-.home .home-content .text-2{
+
+.home .home-content .text-2 {
     font-size: 65px;
     font-weight: 600;
-    margin-left: -3px;  
+    margin-left: -3px;
 }
-.home .home-content .text-3{
+
+.home .home-content .text-3 {
     font-size: 33px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+
+.home .home-content .text-3 span {
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a{
+
+.home .home-content a {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -122,19 +139,21 @@ html,body{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+
+.home .home-content a:hover {
     color: crimson;
     background: none;
 }
 
 /* Menu  Mobile  */
-.menu-btn{
+.menu-btn {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
+
+.scroll-up-btn {
     position: fixed;
     width: 35px;
     height: 37px;
@@ -152,18 +171,20 @@ html,body{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+
+.scroll-up-btn.show {
     opacity: 1;
     pointer-events: auto;
     bottom: 30px;
 }
 
 /* todos os codigos similares */
-section{
+section {
     padding: 100px 0;
     background-color: #ff8c00;
 }
-section .title{
+
+section .title {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -172,7 +193,8 @@ section .title{
     padding-bottom: 20px;
     position: relative;
 }
-section .title::before{
+
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -182,7 +204,8 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-section .title::after{
+
+section .title::after {
     position: absolute;
     bottom: -20px;
     left: 50%;
@@ -193,13 +216,20 @@ section .title::after{
     transform: translateX(-50%);
     width: 100%;
 }
-.about, .services, .skills, .project, .contact, footer{
+
+.about,
+.services,
+.skills,
+.project,
+.contact,
+footer {
     font-family: 'Ubuntu', sans-serif;
 }
+
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -207,28 +237,34 @@ section .title::after{
 }
 
 /*  sessão sobre */
-.about .title::after{
+.about .title::after {
     content: "Quem sou eu?";
 }
-.about .about-content .left{
+
+.about .about-content .left {
     width: 45%;
 }
-.about .about-content .right{
+
+.about .about-content .right {
     width: 55%;
 }
-.about .about-content .right .text{
+
+.about .about-content .right .text {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+
+.about .about-content .right .text span {
     color: crimson;
 }
-.about .about-content .right p{
+
+.about .about-content .right p {
     text-align: justify;
     color: black;
 }
-.about .about-content .right a{
+
+.about .about-content .right a {
     display: inline-block;
     background: crimson;
     color: black;
@@ -240,11 +276,13 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+
+.about .about-content .right a:hover {
     color: crimson;
     background: none;
 }
-.about .about-content .left img{
+
+.about .about-content .left img {
     width: 400px;
     height: 400px;
     object-fit: cover;
@@ -253,21 +291,25 @@ section .title::after{
 
 
 /* sessão especialidades */
-.skills .title::after{
+.skills .title::after {
     content: "O que faço?";
 }
-.skills .skills-content .column{
+
+.skills .skills-content .column {
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+
+.skills .skills-content .left .text {
     font-size: 23px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
+
+.skills .skills-content .left p {
     text-align: justify;
 }
-.skills .skills-content .left a{
+
+.skills .skills-content .left a {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -279,30 +321,36 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
+
+.skills .skills-content .left a:hover {
     color: crimson;
     background: none;
 }
-.skills .skills-content .right .bars{
+
+.skills .skills-content .right .bars {
     margin-bottom: 15px;
 }
-.skills .skills-content .right .info{
+
+.skills .skills-content .right .info {
     display: flex;
-    margin-bottom: 6px; 
+    margin-bottom: 6px;
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .right span{
+
+.skills .skills-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line{
+
+.skills .skills-content .right .line {
     width: 100%;
     height: 5px;
     background: #ccc;
     position: relative;
 }
-.skills .skills-content .right .line::before{
+
+.skills .skills-content .right .line::before {
     content: "";
     position: absolute;
     width: 80%;
@@ -311,63 +359,74 @@ section .title::after{
     left: 0;
     background: crimson;
 }
-.skills .skills-content .right .lmm::before{
+
+.skills .skills-content .right .lmm::before {
     width: 100%;
 
 }
-.skills .skills-content .right .Python::before{
+
+.skills .skills-content .right .Python::before {
     width: 80%;
 }
-.skills .skills-content .right .java::before{
+
+.skills .skills-content .right .java::before {
     width: 75%;
 }
-.skills .skills-content .right .html::before{
+
+.skills .skills-content .right .html::before {
     width: 65%;
 }
-.skills .skills-content .right .css::before{
+
+.skills .skills-content .right .css::before {
     width: 60%;
 }
-.skills .skills-content .right .django::before{
+
+.skills .skills-content .right .django::before {
     width: 50%;
 }
 
 
-/*  sessão de serviços  */
-.codigo, .project{
+/*  sessão de Codigo  */
+.codigo,
+.project {
     background: #ff8c00;
-    color: black;
+    color: white;
 }
+
 .codigo .title::before,
-.project .title::before{
+.project .title::before {
     background: black;
 }
-.title::after{
-    content:"Código Fonte da Pagina(Em andamento...)";
+
+.title::after {
+    content: "Código Fonte da Pagina(Em andamento...)";
 
 }
-/*Codigo de pagina*/
-.containner{
+
+.containner {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     width: 100%;
     height: 800px;
     position: relative;
-    background-image:url('/image/buraco.png') ;
+    background-image: url('/image/buraco.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     justify-content: center;
     align-items: center;
 }
-.containner .efeito{
+
+.containner .efeito {
     display: flex;
     align-items: center;
     justify-content: center;
-   box-shadow: 0 0 15px transparent;
-   border-radius: 35%;
-   
+    box-shadow: 0 0 15px transparent;
+    border-radius: 35%;
+
 }
-.cod_pagina{
+
+.cod_pagina {
     z-index: 1;
     width: 350px;
 }
@@ -375,23 +434,27 @@ section .title::after{
 
 
 /* sessão projetos */
-.project .title::after{
+.project .title::after {
     content: "Projetos";
 }
-.project .carousel .card{
-    background: #222;
+
+.project .carousel .card {
+    background: #525e5d;
     border-radius: 6px;
-    padding: 20px 35px; 
+    padding: 20px 35px;
     text-align: center;
     transition: all 0.3s ease;
 }
-.project .carousel .card:hover{
+
+.project .carousel .card:hover {
     background: crimson;
 }
-a{
+
+a {
     color: white;
 }
-.project .carousel .card img{
+
+.project .carousel .card img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -399,110 +462,133 @@ a{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.project .carousel .card:hover img{
+
+.project .carousel .card:hover img {
     border-color: rgba(63, 255, 10, 0.937);
 }
-.project .carousel .card .box{
+
+.project .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.project .carousel .card:hover .box{
+
+.project .carousel .card:hover .box {
     transform: scale(1.05);
 }
-.project .carousel .card .text{
+
+.project .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.owl-dots{
+
+.owl-dots {
     text-align: center;
     margin-top: 20px;
 }
-.owl-dot{
+
+.owl-dot {
     width: 14px;
     height: 14px;
-    outline: none!important;
+    outline: none !important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid crimson !important;
     transition: all 0.3s ease;
 }
-.owl-dot.active{
+
+.owl-dot.active {
     width: 35px;
     border-radius: 15px;
 }
+
 .owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
+.owl-dot:hover {
+    background: crimson !important;
 }
 
 /* sessão Contato */
-.contact .title::after{
+.contact .title::after {
     content: "Contate-me";
 }
-.contact .contact-content .column{
+
+.contact .contact-content .column {
     width: calc(50% - 30px);
 }
-.contact .contact-content{
+
+.contact .contact-content {
     align-items: flex-start;
 }
-.contact .contact-content .left p{
+
+.contact .contact-content .left p {
     text-align: justify;
 }
-.contact .contact-content .text{
+
+.contact .contact-content .text {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.contact .contact-content .left .icons{
+
+.contact .contact-content .left .icons {
     margin: 10px 0;
 }
-.contact .contact-content .row{
+
+.contact .contact-content .row {
     display: flex;
     height: 65px;
     align-items: center;
 }
-.contact .contact-content .row .info{
+
+.contact .contact-content .row .info {
     margin-left: 30px;
 }
-.contact .contact-content .row .info .head{
+
+.contact .contact-content .row .info .head {
     font-weight: 500;
 }
-.contact .contact-content .row .info .sub-title{
+
+.contact .contact-content .row .info .sub-title {
     color: #333;
 }
 
-.contact .contact-content .row ion-icon{
+.contact .contact-content .row ion-icon {
     font-size: 25px;
     color: crimson;
 }
-.contact .contact-content .row a{
+
+.contact .contact-content .row a {
     font-weight: 700;
     color: black;
 }
-.contact .contact-content .row a ion-icon{
+
+.contact .contact-content .row a ion-icon {
     color: #3b5998;
     font-size: 25px;
     font-weight: 600;
 }
-.contact .contact-content .row i ion-icon{
+
+.contact .contact-content .row i ion-icon {
     color: #34af23;
     font-size: 25px;
     font-weight: 600;
 }
-.contact .right form .fields{
-    display: flex;   
+
+.contact .right form .fields {
+    display: flex;
 }
+
 .contact .right form .field,
-.contact .right form .fields .field{
+.contact .right form .fields .field {
     width: 100%;
     height: 45px;
     margin-bottom: 15px;
 }
+
 .contact .right form .field input,
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
     width: 100%;
     height: 100%;
     border: 1px solid #ccc;
@@ -510,30 +596,36 @@ a{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif;
 }
-.contact .right form .name{
+
+.contact .right form .name {
     margin-right: 10px;
 }
-.contact .right form .email{
+
+.contact .right form .email {
     margin-left: 10px;
 }
-.contact .right form .textarea{
+
+.contact .right form .textarea {
     width: 100%;
     height: 80px;
 }
-.contact .right form .textarea textarea{
+
+.contact .right form .textarea textarea {
     padding-top: 10px;
     resize: none;
 }
-.contact .right form .button{
+
+.contact .right form .button {
     width: 170px;
     resize: 47px;
 }
-.contact .right form .button button{
+
+.contact .right form .button button {
     color: #fff;
     display: block;
-     width: 160px!important;
+    width: 160px !important;
     height: 45px;
     outline: none;
     font-size: 18px;
@@ -545,33 +637,36 @@ a{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.contact .right form .button button:hover{
+
+.contact .right form .button button:hover {
     color: crimson;
     background: none;
 }
+
 /* sessão footer */
-footer{
-    width: 100%;
-    bottom: 0;
+footer {
     background: #111;
     padding: 15px 18px;
     color: #fff;
     text-align: center;
-    align-self: baseline;
 }
-footer span a{
+
+footer span a {
     color: crimson;
     text-decoration: none;
 }
-footer span a:hover{
+
+footer span a:hover {
     text-decoration: underline;
 }
-footer a ion-icon{
+
+footer a ion-icon {
     padding-left: 20px;
     color: #3b5998;
     font-size: 22px;
 }
-footer b a ion-icon{
+
+footer b a ion-icon {
     padding-left: 8px;
     color: #fff;
 }
@@ -580,25 +675,29 @@ footer b a ion-icon{
 
 /*  responsivo  */
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
 }
+
 @media (max-width: 991px) {
-    .max-width{
+    .max-width {
         padding: 0 50px;
     }
 }
-@media (max-width: 947px){
-    .menu-btn{
-        display:block ;
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
         z-index: 999;
     }
-    .menu-btn i.active:before{
+
+    .menu-btn i.active:before {
         content: "\f00d";
     }
-    .navbar .menu{
+
+    .navbar .menu {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -609,98 +708,123 @@ footer b a ion-icon{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+
+    .navbar .menu.active {
         left: 0;
-        
+
     }
-    .navbar .menu li{
+
+    .navbar .menu li {
         display: block;
     }
-    .navbar .menu li a{
+
+    .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 70px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 35px;
     }
-    .home .home-content a{
+
+    .home .home-content a {
         font-size: 23px;
         padding: 10px 30px;
     }
-    .max-width{
+
+    .max-width {
         max-width: 930px;
     }
-    .about .about-content .column{
+
+    .about .about-content .column {
         width: 100%;
     }
-    .about .about-content .left{
+
+    .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+
+    .about .about-content .right {
         flex: 100%;
     }
-    .services .serv-content .card{
+
+    .services .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
     .skills .skills-content .column,
-    .contact .contact-content .column{
+    .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
-    .cod_pagina{
+
+    .cod_pagina {
         width: 90%;
     }
 }
+
 @media (max-width: 690px) {
-    .max-width{
+    .max-width {
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 60px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 32px;
     }
-    .home .home-content a{
+
+    .home .home-content a {
         font-size: 20px;
     }
-    .services .serv-content .card{
+
+    .services .serv-content .card {
         width: 100%;
     }
-    
-    .containner{
+
+    .containner {
         height: 700px;
     }
 }
+
 @media (max-width: 500px) {
-    .home .home-content .text-2{
+    .home .home-content .text-2 {
         font-size: 50px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 27px;
     }
+
     .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .skills .skills-content .left .text {
         font-size: 19px;
     }
-    .contact .right form .fields{
+
+    .contact .right form .fields {
         flex-direction: column;
     }
+
     .contact .right form .name,
-    .contact .right form .email{
+    .contact .right form .email {
         margin: 0;
     }
-    .right form .error-box{
-       width: 150px;
+
+    .right form .error-box {
+        width: 150px;
     }
-    .scroll-up-btn{
+
+    .scroll-up-btn {
         right: 15px;
         bottom: 15px;
         height: 38px;
@@ -708,13 +832,17 @@ footer b a ion-icon{
         font-size: 23px;
         line-height: 38px;
     }
-    .containner{
+
+    .containner {
         height: 400px;
     }
-    section .title::after{
+
+    section .title::after {
         bottom: -45px;
     }
-    .cod_pagina{
+
+    .cod_pagina {
         width: 65%;
     }
+
 }
