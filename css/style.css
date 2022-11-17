@@ -267,7 +267,7 @@ footer {
 .about .about-content .right a {
     display: inline-block;
     background: crimson;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -435,7 +435,7 @@ footer {
 
 /* sessão projetos */
 .project .title::after {
-    content: "Projetos";
+    content: "Projetos ";
 }
 
 .project .carousel .card {
@@ -444,14 +444,20 @@ footer {
     padding: 20px 35px;
     text-align: center;
     transition: all 0.3s ease;
+    
 }
 
 .project .carousel .card:hover {
     background: crimson;
 }
 
+
 a {
     color: white;
+}
+
+.title {
+    color: black;
 }
 
 .project .carousel .card img {
@@ -461,6 +467,7 @@ a {
     border-radius: 50%;
     border: 5px solid crimson;
     transition: all 0.3s ease;
+    
 }
 
 .project .carousel .card:hover img {
@@ -473,6 +480,7 @@ a {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    color: white;
 }
 
 .project .carousel .card:hover .box {
@@ -483,6 +491,7 @@ a {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    
 }
 
 .owl-dots {
@@ -519,7 +528,9 @@ a {
 }
 
 .contact .contact-content {
-    align-items: flex-start;
+   display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact .contact-content .left p {
@@ -551,7 +562,7 @@ a {
 }
 
 .contact .contact-content .row .info .sub-title {
-    color: #333;
+    color: black;
 }
 
 .contact .contact-content .row ion-icon {
@@ -559,86 +570,26 @@ a {
     color: crimson;
 }
 
-.contact .contact-content .row a {
-    font-weight: 700;
-    color: black;
-}
-
 .contact .contact-content .row a ion-icon {
-    color: #3b5998;
+    color: crimson;
     font-size: 25px;
     font-weight: 600;
 }
-
-.contact .contact-content .row i ion-icon {
-    color: #34af23;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.contact .right form .fields {
-    display: flex;
-}
-
-.contact .right form .field,
-.contact .right form .fields .field {
-    width: 100%;
-    height: 45px;
-    margin-bottom: 15px;
-}
-
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.contact .right form .name {
-    margin-right: 10px;
-}
-
-.contact .right form .email {
-    margin-left: 10px;
-}
-
-.contact .right form .textarea {
-    width: 100%;
-    height: 80px;
-}
-
-.contact .right form .textarea textarea {
-    padding-top: 10px;
-    resize: none;
-}
-
-.contact .right form .button {
-    width: 170px;
-    resize: 47px;
-}
-
-.contact .right form .button button {
+.contact .right  a  {
+    display: inline-block;
+    background: crimson;
     color: #fff;
-    display: block;
-    width: 160px !important;
-    height: 45px;
-    outline: none;
     font-size: 18px;
     font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
     border-radius: 6px;
-    cursor: pointer;
-    flex-wrap: nowrap;
-    background: crimson;
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 
-.contact .right form .button button:hover {
+
+.contact .right  a:hover {
     color: crimson;
     background: none;
 }
