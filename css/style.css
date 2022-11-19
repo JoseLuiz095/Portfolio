@@ -136,7 +136,7 @@ body {
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid  crimson;
     transition: all 0.3s ease;
 }
 
@@ -439,7 +439,7 @@ footer {
 }
 
 .project .carousel .card {
-    background: #525e5d;
+    background: #3E6D9C;
     border-radius: 6px;
     padding: 20px 35px;
     text-align: center;
