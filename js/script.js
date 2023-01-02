@@ -48,7 +48,11 @@ $(document).ready(function () {
         backSpeed: 60,
         loop: true
     });
-
+    setTimeout(() => {
+        window.scroll(0,115)
+        
+    }, 4500);
+    
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 25,
@@ -72,3 +76,4 @@ $(document).ready(function () {
         }
     });
 });
+
