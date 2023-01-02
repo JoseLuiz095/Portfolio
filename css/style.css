@@ -11,6 +11,7 @@ html,
 body {
     scroll-behavior: smooth;
     height: 100vh;
+    
 }
 
 /*icones*/
@@ -86,21 +87,28 @@ body {
 }
 
 /*  Home   inicio */
+.img{
+    background: url("/image/backtest.png") ;
+    filter: blur(5.5px);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+}
+
 .home {
     display: flex;
-    background: url("/image/banner_1.png");
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 .home .max-width {
     width: 100%;
     display: flex;
+    z-index: 2;
 }
 
 .home .max-width .row {
