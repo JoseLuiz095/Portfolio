@@ -49,9 +49,9 @@ $(document).ready(function () {
         loop: true
     });
     setTimeout(() => {
-        window.scroll(0,115)
+        window.scroll(0,45)
         
-    }, 4500);
+    }, 3000);
     
     // owl carousel script
     $('.carousel').owlCarousel({
