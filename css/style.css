@@ -5,12 +5,56 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #b0b0b0;
+    height: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 5px;
+    border:solid 1px #b0b0b0;
+}
+::-webkit-scrollbar-thumb:hover{
+background-color: #c52f4b9e ;
 }
 
 html,
 body {
-    scroll-behavior: smooth;
     height: 100vh;
+}
+/*animação por pagina parada */
+.animate{
+    animation: parado 3s infinite ;
+    transition: all ease-in-out 1s;
+}
+
+@keyframes parado {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.iconAnimate{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom: 30px;
+    left: 50%;
+    border-radius: 50px;
+    border: solid 2px #b0b0b0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: translate(-30px,0px);
+    cursor: pointer;
     
 }
 
@@ -39,8 +83,9 @@ body {
 }
 
 .navbar.sticky {
-    background: crimson;
+    background: linear-gradient(to bottom, #111, transparent);
     padding: 15px 0;
+    backdrop-filter: blur(3px);
 }
 
 .navbar .max-width {
@@ -61,7 +106,7 @@ body {
 }
 
 .navbar.sticky .logo a span {
-    color: black;
+    color: crimson;
 }
 
 .navbar .menu li {
@@ -160,6 +205,14 @@ body {
     cursor: pointer;
     display: none;
 }
+.menu-btn1 {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+}
+.none{
+    display: none !important;
+}
 
 .scroll-up-btn {
     position: fixed;
@@ -177,7 +230,7 @@ body {
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .scroll-up-btn.show {
@@ -189,7 +242,7 @@ body {
 /* todos os codigos similares */
 section {
     padding: 100px 0;
-    background-color: #ff8c00;
+    background-color: #f3af5c;
 }
 
 section .title {
@@ -218,7 +271,7 @@ section .title::after {
     bottom: -20px;
     left: 50%;
     font-size: 20px;
-    background: #ff8c00;
+    background: #f3af5c;;
     color: crimson;
     padding: 5px;
     transform: translateX(-50%);
@@ -397,7 +450,7 @@ footer {
 /*  sessão de Codigo  */
 .codigo,
 .project {
-    background: #ff8c00;
+    background: #f3af5c;;
     color: white;
 }
 
@@ -669,7 +722,8 @@ footer b a ion-icon {
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #00000091;
+        backdrop-filter: blur(10px);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
