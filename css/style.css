@@ -7,42 +7,49 @@
     text-decoration: none;
 
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 8px;
     background-color: #b0b0b0;
     height: 15px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: crimson;
     border-radius: 5px;
-    border:solid 1px #b0b0b0;
+    border: solid 1px #b0b0b0;
 }
-::-webkit-scrollbar-thumb:hover{
-background-color: #c52f4b9e ;
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c52f4b9e;
 }
 
 html,
 body {
     height: 100vh;
 }
+
 /*animação por pagina parada */
-.animate{
-    animation: parado 3s infinite ;
+.animate {
+    animation: parado 3s infinite;
     transition: all ease-in-out 1s;
 }
 
 @keyframes parado {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-20px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
-.iconAnimate{
+
+.iconAnimate {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -53,9 +60,9 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    transform: translate(-30px,0px);
+    transform: translate(-30px, 0px);
     cursor: pointer;
-    
+
 }
 
 /*icones*/
@@ -132,14 +139,14 @@ body {
 }
 
 /*  Home   inicio */
-.img{
-    background: url("/image/backtest.png") ;
+.img {
+    background: url("/image/backtest.png");
     filter: blur(5.5px);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
-    position:absolute;
+    position: absolute;
 }
 
 .home {
@@ -205,12 +212,14 @@ body {
     cursor: pointer;
     display: none;
 }
+
 .menu-btn1 {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
 }
-.none{
+
+.none {
     display: none !important;
 }
 
@@ -271,7 +280,8 @@ section .title::after {
     bottom: -20px;
     left: 50%;
     font-size: 20px;
-    background: #f3af5c;;
+    background: #f3af5c;
+    ;
     color: crimson;
     padding: 5px;
     transform: translateX(-50%);
@@ -450,7 +460,8 @@ footer {
 /*  sessão de Codigo  */
 .codigo,
 .project {
-    background: #f3af5c;;
+    background: #f3af5c;
+    ;
     color: white;
 }
 
