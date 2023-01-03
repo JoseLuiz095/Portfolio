@@ -1,4 +1,26 @@
+
 $(document).ready(function () {
+    $("a").on('click', function (event) {
+        // animacão do botão
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
     $(window).scroll(function () {
         // sticky navbar on scroll script
         if (this.scrollY > 20) {
@@ -29,9 +51,18 @@ $(document).ready(function () {
     // toggle menu/navbar script
 
     $('.menu-btn').click(function () {
-        $('.navbar .menu').removeClass("teste");
         $('.navbar .menu').addClass("active");
+        $('.menu-btn').addClass("none");
+        $('.navbar .menu').removeClass("teste");
         $('.menu-btn i').toggleClass("active");
+        $('.menu-btn1').removeClass("none")
+    })
+    $('.menu-btn1').click(function () {
+        $('.navbar .menu').removeClass("active");
+        $('.navbar .menu').removeClass("teste");
+        $('.menu-btn i').toggleClass("active");
+        $('.menu-btn1').addClass("none");
+        $('.menu-btn').removeClass("none");
     })
 
 
@@ -48,11 +79,9 @@ $(document).ready(function () {
         backSpeed: 60,
         loop: true
     });
-    setTimeout(() => {
-        window.scroll(0,45)
-        
-    }, 3000);
-    
+
+
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 25,
@@ -76,4 +105,5 @@ $(document).ready(function () {
         }
     });
 });
+
 
