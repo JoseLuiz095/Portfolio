@@ -86,3 +86,8 @@ form button:hover {
   color: #6200ff;
   font-weight: bold
 }
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
