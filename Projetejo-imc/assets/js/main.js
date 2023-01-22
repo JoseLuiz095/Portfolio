@@ -9,7 +9,7 @@ form.addEventListener('submit', function (e) {
 
     const peso = Number(inputPeso.value);
     const altura = Number(inputAltura.value);
-    if (!peso ) {
+    if (!peso) {
         setResultado('Peso inválido', false);
         return;
     }
@@ -19,7 +19,7 @@ form.addEventListener('submit', function (e) {
     }
     const imc = getImc(peso, altura);
     const nivelImc = getNivelImc(imc);
-    const msg = `Seu IMC é ${imc}(${nivelImc}).`;
+    const msg = `Seu IMC é ${imc} (${nivelImc}).`;
     setResultado(msg, true);
 });
 //tabela do niveis de IMC
