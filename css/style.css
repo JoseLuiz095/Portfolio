@@ -140,7 +140,7 @@ body {
 
 /*  Home   inicio */
 .img {
-    background: url("/image/backtest.png");
+    background: url("/image/backtest.webp");
     filter: blur(5.5px);
     background-size: cover;
     background-attachment: fixed;
@@ -481,7 +481,7 @@ footer {
     width: 100%;
     height: 750px;
     position: relative;
-    background-image: url('/image/buraco.png');
+    background-image: url('/image/buraco.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
