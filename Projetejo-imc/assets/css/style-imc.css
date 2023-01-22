@@ -84,10 +84,18 @@ form button:hover {
   width: 95%;
   text-align: right;
   color: #6200ff;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .logo {
   width: 30px;
   height: 30px;
+}
+
+.altura-peso {
+  font-weight: bold;
+}
+
+.titulo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
