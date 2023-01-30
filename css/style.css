@@ -250,7 +250,7 @@ body {
 
 /* todos os codigos similares */
 section {
-    padding: 100px 0;
+    padding: 80px 0;
     background-color: #f3af5c;
 }
 
@@ -461,7 +461,6 @@ footer {
 .codigo,
 .project {
     background: #f3af5c;
-    ;
     color: white;
 }
 
@@ -884,7 +883,7 @@ footer b a ion-icon {
     }
 
     .cod_pagina {
-        width: 65%;
+        width: 300px;
     }
 
     .containner .efeito .cod_pagina {
