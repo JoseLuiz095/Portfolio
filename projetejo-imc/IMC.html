@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Uma pagina focada em calcular o IMC e identificar a classificação do seu IMC">
+    <title>Calculadora de IMC</title>
+    <link rel="shortcut icon" href="./assets/img/icons8-calculadora-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style-imc.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1 class="titulo">Calculadora de IMC</h1>
+        <form action="/" id="formulario" method="post">
+            <label for="peso" class="altura-peso">Peso (ex.: 69.2)</label>
+            <input type="text" id="peso" name="peso">
+            <label for="altura" class="altura-peso">Altura (ex.: 1.70)</label>
+            <input type="text" id="altura" name="altura">
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+    <footer class="fundo">
+        <h3 class="marca">JL095<img class='logo' src="./assets/img/icons8-programming-flag-48.png"></h3>
+    </footer>
+
+</body>
+
+</html>
