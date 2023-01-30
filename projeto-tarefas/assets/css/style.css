@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
@@ -17,7 +18,7 @@ body {
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
-  
+
 }
 
 .container {
@@ -26,10 +27,12 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  
+
 }
 
-form input, form label, form button {
+form input,
+form label,
+form button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -39,7 +42,7 @@ form input {
   font-size: 24px;
   height: 50px;
   padding: 0 20px;
-  
+
 }
 
 form input:focus {
@@ -60,11 +63,13 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
-.titulo{
+
+.titulo {
   font-family: 'Kavoon', cursive;
   font-size: 40px;
 }
-.btn-tarefa{
+
+.btn-tarefa {
   font-size: 16px;
   color: #fff;
   border: transparent;
@@ -72,20 +77,23 @@ form button:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-.input-tarefa{
+
+.input-tarefa {
   align-items: center;
 }
-.apagar{
-  background-image:url('../img/lixeira.ico');
+
+.apagar {
+  background-image: url('../img/lixeira.ico');
   background-size: 24px;
   background-repeat: no-repeat;
-  background-color:orange;
+  background-color: orange;
   border: transparent;
   border-radius: 12px;
   top: 4px;
   width: 24px;
   height: 24px;
 }
+
 .marca {
   font-size: 25px;
   font-family: 'Kavoon', cursive;
@@ -93,6 +101,11 @@ form button:hover {
   position: fixed;
   width: 95%;
   text-align: right;
-  color:crimson;
+  color: crimson;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 350px;
+  }
 }
