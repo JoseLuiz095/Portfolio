@@ -81,7 +81,7 @@ form button:hover {
 .display {
   font-size: 2em;
   width: 100%;
-  text-align: center;
+  text-align: right;
   background: #fff;
   color: rgb(39, 39, 39);
 }
