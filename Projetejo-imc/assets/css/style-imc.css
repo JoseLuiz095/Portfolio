@@ -99,3 +99,8 @@ form button:hover {
 .titulo {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 350px;
+  }
+}
