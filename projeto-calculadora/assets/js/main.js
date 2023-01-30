@@ -45,6 +45,7 @@ function criaCalculadora() {
 
     clearDisplay() {
       this.display.value = '';
+      this.display.focus();
     },
 
     apagaUm() {
