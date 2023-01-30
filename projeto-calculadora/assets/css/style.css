@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
@@ -14,22 +15,27 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(../img/fundo.svg);
-  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
   width: auto;
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
+  overflow: hidden;
 }
 
 .container {
-  max-width: 640px;
+  max-width: 65vh;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
 }
 
-form input, form label, form button {
+form input,
+form label,
+form button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -37,7 +43,7 @@ form input, form label, form button {
 
 form input {
   font-size: 24px;
-  height: 50px;
+  height: 0%;
   padding: 0 20px;
 }
 
@@ -48,9 +54,9 @@ form input:focus {
 form button {
   border: none;
   background: var(--primary-color);
-  background : #cbdcdf;
+  background: #cbdcdf;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 7000;
   height: 50px;
   cursor: pointer;
   margin-top: 30px;
@@ -59,23 +65,25 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
-.titulo{
+
+.titulo {
   text-align: center;
   font-family: 'Kavoon', cursive;
   color: #2f3fad;
 }
+
 .calculadora {
-  width: 400px;
+  width: auto;
   margin: auto;
-  
+
 }
 
 .display {
   font-size: 2em;
   width: 100%;
-  text-align: right;
+  text-align: center;
   background: #fff;
-  color:rgb(39, 39, 39);
+  color: rgb(39, 39, 39);
 }
 
 .btn {
@@ -86,13 +94,15 @@ form button:hover {
   background: #808a8c;
   cursor: pointer;
 }
-.btn-eq{
+
+.btn-eq {
   background: #2f3fad;
 }
 
 .btn:hover {
   background: #9e9e9e;
 }
+
 .marca {
   font-size: 25px;
   font-family: 'Kavoon', cursive;
