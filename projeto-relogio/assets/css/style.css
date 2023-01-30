@@ -111,3 +111,8 @@ form button:hover {
   width: 30px;
   height: 30px;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px; 
+  }
+}
