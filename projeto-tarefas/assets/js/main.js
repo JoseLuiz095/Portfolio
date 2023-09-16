@@ -7,9 +7,9 @@ function criaLi() {
   return li;
 }
 
-inputTarefa.addEventListener('keypress', function(e) {
+inputTarefa.addEventListener('keypress', function (e) {
   if (e.keyCode === 13) {
-    if (!inputTarefa.value){
+    if (!inputTarefa.value) {
       return
     }
     criaTarefa(inputTarefa.value);
@@ -41,14 +41,14 @@ function criaTarefa(textoInput) {
   salvarTarefas();
 }
 
-btnTarefa.addEventListener('click', function() {
-  if (!inputTarefa.value){
+btnTarefa.addEventListener('click', function () {
+  if (!inputTarefa.value) {
     return
   }
   criaTarefa(inputTarefa.value);
 });
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
   const el = e.target;
 
   if (el.classList.contains('apagar')) {
@@ -75,7 +75,7 @@ function adicionaTarefasSalvas() {
   const tarefas = localStorage.getItem('tarefas');
   const listaDeTarefas = JSON.parse(tarefas);
 
-  for(let tarefa of listaDeTarefas) {
+  for (let tarefa of listaDeTarefas) {
     criaTarefa(tarefa);
   }
 }

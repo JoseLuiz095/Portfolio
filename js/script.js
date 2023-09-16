@@ -21,21 +21,7 @@ $(document).ready(function () {
             });
         } // End if
     });
-    $(window).scroll(function () {
-        // sticky navbar on scroll script
-        if (this.scrollY > 20) {
-            $('.navbar').addClass("sticky");
-        } else {
-            $('.navbar').removeClass("sticky");
-        }
-
-        // scroll-up button show/hide script
-        if (this.scrollY > 500) {
-            $('.scroll-up-btn').addClass("show");
-        } else {
-            $('.scroll-up-btn').removeClass("show");
-        }
-    });
+    
     // slide-up script
     $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 });
@@ -43,23 +29,23 @@ $(document).ready(function () {
         $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function () {
+    $('.navbarr .menu li a').click(function () {
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
         $('.menu').toggleClass("teste");
     });
-    // toggle menu/navbar script
+    // toggle menu/navbarr script
 
     $('.menu-btn').click(function () {
-        $('.navbar .menu').addClass("active");
+        $('.navbarr .menu').addClass("active");
         $('.menu-btn').addClass("none");
-        $('.navbar .menu').removeClass("teste");
+        $('.navbarr .menu').removeClass("teste");
         $('.menu-btn i').toggleClass("active");
-        $('.menu-btn1').removeClass("none")
+        $('.menu-btn1').removeClass("none");
     })
     $('.menu-btn1').click(function () {
-        $('.navbar .menu').removeClass("active");
-        $('.navbar .menu').removeClass("teste");
+        $('.navbarr .menu').removeClass("active");
+        $('.navbarr .menu').removeClass("teste");
         $('.menu-btn i').toggleClass("active");
         $('.menu-btn1').addClass("none");
         $('.menu-btn').removeClass("none");

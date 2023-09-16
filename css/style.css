@@ -62,6 +62,7 @@ body {
     display: flex;
     transform: translate(-30px, 0px);
     cursor: pointer;
+    color:white ;
 
 }
 
@@ -79,49 +80,46 @@ body {
 }
 
 /*  navbar início*/
-.navbar {
+.navbarr {
     position: fixed;
     width: 100%;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     z-index: 999;
     transition: all 0.3s ease;
-
-}
-
-.navbar.sticky {
     background: linear-gradient(to bottom, #111, transparent);
     padding: 15px 0;
     backdrop-filter: blur(3px);
+
 }
 
-.navbar .max-width {
+.navbarr .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .logo a {
+.navbarr .logo a {
     color: white;
     font-size: 35px;
     font-weight: 600;
 }
 
-.navbar .logo a span {
+.navbarr .logo a span {
     color: crimson;
 
 }
 
-.navbar.sticky .logo a span {
+.navbarr .sticky .logo a span {
     color: crimson;
 }
 
-.navbar .menu li {
+.navbarr .menu li {
     list-style: none;
     display: inline-block;
 }
 
-.navbar .menu li a {
+.navbarr .menu li a {
     display: block;
     color: white;
     font-size: 18px;
@@ -130,11 +128,11 @@ body {
     transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover {
+.navbarr .menu li a:hover {
     color: crimson;
 }
 
-.navbar.sticky .menu li a:hover {
+.navbarr .sticky .menu li a:hover {
     color: black;
 }
 
@@ -163,7 +161,7 @@ body {
     z-index: 2;
 }
 
-.home .max-width .row {
+.home .max-width .roww {
     margin-right: 0;
 }
 
@@ -393,9 +391,13 @@ footer {
     transition: all 0.3s ease;
 }
 
+
 .skills .skills-content .left a:hover {
     color: crimson;
     background: none;
+}
+.column .right{
+   justify-items: center;
 }
 
 .skills .skills-content .right .bars {
@@ -407,6 +409,9 @@ footer {
     margin-bottom: 6px;
     align-items: center;
     justify-content: space-between;
+}
+.skills-content .right a {
+    text-decoration:none;
 }
 
 .skills .skills-content .right span {
@@ -454,53 +459,6 @@ footer {
 
 .skills .skills-content .right .django::before {
     width: 50%;
-}
-
-
-/*  sessão de Codigo  */
-.codigo,
-.project {
-    background: #f3af5c;
-    color: white;
-}
-
-.codigo .title::before,
-.project .title::before {
-    background: black;
-}
-
-.title::after {
-    content: "Código Fonte da Pagina";
-
-}
-
-.containner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 750px;
-    position: relative;
-    background-image: url('/image/buraco.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    justify-content: center;
-    align-items: center;
-}
-
-.containner .efeito .cod_pagina {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 10px transparent;
-    border-radius: 50px;
-    height: 500px;
-    width: 500px;
-}
-
-.cod_pagina {
-    z-index: 1;
-    width: 350px;
 }
 
 
@@ -620,30 +578,31 @@ a {
     margin: 10px 0;
 }
 
-.contact .contact-content .row {
+.contact .contact-content .roww {
     display: flex;
     height: 65px;
     align-items: center;
 }
 
-.contact .contact-content .row .info {
+.contact .contact-content .roww .info {
     margin-left: 30px;
 }
 
-.contact .contact-content .row .info .head {
+.contact .contact-content .roww .info .head {
     font-weight: 500;
 }
 
-.contact .contact-content .row .info .sub-title {
+.contact .contact-content .roww .info .sub-title {
     color: black;
 }
 
-.contact .contact-content .row ion-icon {
+.contact .contact-content .roww ion-icon {
+    display: flex;
     font-size: 25px;
     color: crimson;
 }
 
-.contact .contact-content .row a ion-icon {
+.contact .contact-content .roww a ion-icon {
     color: crimson;
     font-size: 25px;
     font-weight: 600;
@@ -727,7 +686,7 @@ footer b a ion-icon {
         content: "\f00d";
     }
 
-    .navbar .menu {
+    .navbarr .menu {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -740,16 +699,16 @@ footer b a ion-icon {
         transition: all 0.3s ease;
     }
 
-    .navbar .menu.active {
+    .navbarr .menu.active {
         left: 0;
 
     }
 
-    .navbar .menu li {
+    .navbarr .menu li {
         display: block;
     }
 
-    .navbar .menu li a {
+    .navbarr .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;

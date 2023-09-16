@@ -41,11 +41,11 @@ function criaCalculadora() {
         alert('Conta inválida');
         return;
       }
+      
     },
 
     clearDisplay() {
       this.display.value = '';
-      this.display.focus();
     },
 
     apagaUm() {
@@ -56,6 +56,7 @@ function criaCalculadora() {
     cliqueBotoes() {
       document.addEventListener('click', e => {
         const el = e.target;
+        
 
         if(el.classList.contains('btn-num')) {
           this.btnParaDisplay(el.innerText);
@@ -80,7 +81,7 @@ function criaCalculadora() {
     btnParaDisplay(valor) {
       this.display.value += valor;
     }
-
+    
   };
 }
 
