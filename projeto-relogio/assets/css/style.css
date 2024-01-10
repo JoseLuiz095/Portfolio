@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/back.svg);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: rgb(212, 212, 212);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+.titulo{
+  font-size: 2em;
+  font-family: 'Kavoon', cursive;
+  text-align: center;
+}
+.relogio {
+  text-align: center;
+  font-size: 3em;
+}
+
+.pausado {
+  color: rgb(218, 130, 7);
+}
+.containner{
+  text-align: center;
+}
+.iniciar{
+  width: 50px;
+  height: 50px;
+  border:none;
+  padding: 0px 0px;
+  background-position: center;
+  background: rgba(212, 212, 212, 0.491);
+}
+.pausar{
+  width: 50px;
+  height: 50px;
+  border:none;
+  padding: 0px 0px;
+  background-position: center;
+  background: rgba(212, 212, 212, 0.491);
+}
+.zerar{
+  width: 50px;
+  height: 50px;
+  border:none;
+  padding: 0px 0px;
+  background-position: center;
+  background: rgba(212, 212, 212, 0.491);
+}
+.marca {
+  font-size: 25px;
+  font-family: 'Kavoon', cursive;
+  bottom: 1%;
+  position: fixed;
+  width: 95%;
+  text-align: right;
+  color: hsla(276, 95%, 47%, 0.667);
+  font-weight: bold;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px; 
+  }
+}
