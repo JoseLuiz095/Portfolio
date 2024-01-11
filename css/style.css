@@ -380,7 +380,10 @@ footer {
     border: 2px solid var(--cor-de-texto-primaria);
     transition: all 0.3s ease;
 }
-
+.skills .skills-content .left a:hover {
+    color: var(--cor-de-texto-primaria);
+    background: none;
+}
 
 
 
@@ -392,26 +395,19 @@ footer {
 }
 
 .project .carousel .card {
-    background: #3E6D9C;
+    background:#f3af5c;
     border-radius: 6px;
     padding: 20px 35px;
     text-align: center;
     transition: all 0.3s ease;
+    --bs-card-border-width: transparent;
 
 }
 
 .project .carousel .card:hover {
-    background: var(--cor-de-texto-primaria);
+    background:var(--cor-de-texto-primaria);
 }
 
-
-a {
-    color: var(--cor-de-texto-primaria);
-}
-
-.title {
-    color: black;
-}
 
 .project .carousel .card img {
     width: 150px;
@@ -424,7 +420,7 @@ a {
 }
 
 .project .carousel .card:hover img {
-    border-color: rgba(63, 255, 10, 0.937);
+    border-color: black;
 }
 
 .project .carousel .card .box {
@@ -433,7 +429,7 @@ a {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    color: var(--cor-de-texto-primaria);
+    color: black;
 }
 
 .project .carousel .card:hover .box {
@@ -487,31 +483,30 @@ a {
     justify-content: center;
 }
 
-.contact .contact-content .left p {
-    text-align: justify;
-}
-
 .contact .contact-content .text {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.contact .contact-content .left .icons {
-    margin: 10px 0;
+.contact .contact-content .icons{
+    display: flex;
+    flex-direction: column;
 }
 
 .contact .contact-content .roww {
     display: flex;
-    height: 65px;
+    flex-direction: row;
     align-items: center;
+    padding: 5px;
 }
 
 .contact .contact-content .roww .info {
-    margin-left: 30px;
+    padding: 0 8px ;
 }
 
 .contact .contact-content .roww .info .head {
+    color: black;
     font-weight: 500;
 }
 
