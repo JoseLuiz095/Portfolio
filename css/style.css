@@ -26,6 +26,7 @@
 :root{
     --cor-de-texto-primaria:crimson;
     --cor-de-texto-secundaria: #fff;
+    --cor-de-texto-basico:black;
 }
 html,
 body {
