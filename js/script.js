@@ -54,13 +54,13 @@ $(document).ready(function () {
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Full-Stack", "Suporte em TI", "Freelancer"],
+        strings: [" Desenvolvedor Front-end", " Técnico da informação", "Freelancer"],
         typeSpeed: 200,
         backSpeed: 60,
         loop: true
     });
     var typed = new Typed(".typing-2", {
-        strings: ["Full-Stack", "Suporte em TI", "Freelancer"],
+        strings: [" Desenvolvedor Front-end", " Técnico da informação", "Freelancer"],
         typeSpeed: 200,
         backSpeed: 60,
         loop: true
