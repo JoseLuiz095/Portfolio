@@ -37,24 +37,16 @@ $(document).ready(function () {
     // toggle menu/navbarr script
 
     $('.menu-btn').click(function () {
-        $('.navbarr .menu').addClass("active");
+        $('.navbarr .menu').addClass("actived");
         $('.menu-btn').addClass("none");
         $('.navbarr .menu').removeClass("teste");
-        $('.menu-btn ').toggleClass("active");
+        $('.menu-btn i').toggleClass("actived");
         $('.menu-btn1').removeClass("none");
-        
     })
     $('.menu-btn1').click(function () {
-        $('.navbarr .menu').removeClass("active");
+        $('.navbarr .menu').removeClass("actived");
         $('.navbarr .menu').removeClass("teste");
-        $('.menu-btn').toggleClass("active");
-        $('.menu-btn1').addClass("none");
-        $('.menu-btn').removeClass("none");
-    })
-    $('.opcoes').click(function () {
-        $('.navbarr .menu').removeClass("active");
-        $('.navbarr .menu').removeClass("teste");
-        $('.menu-btn  ').toggleClass("active");
+        $('.menu-btn i').toggleClass("actived");
         $('.menu-btn1').addClass("none");
         $('.menu-btn').removeClass("none");
     })
