@@ -129,7 +129,7 @@ body {
 
 /*  Home   inicio */
 .img {
-    background: url("/image/backtest.webp");
+    background: url("../image/backtest.webp");
     filter: blur(2px);
     background-size: cover;
     background-attachment: fixed;
